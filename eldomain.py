@@ -440,7 +440,7 @@ class ELDomain(Domain):
                             contnode, name)
 
     def get_symbols(self):
-        for refname, (docname, type) in self.data['symbols'].iteritems():
+        for refname, (docname, type) in self.data['symbols'].items():
             yield (refname, refname, type, docname, refname, 1)
 
 
@@ -532,7 +532,7 @@ def load_packages(app):
     emacs = app.config.emacs_executable
     # `app.confdir` will be ignored if `elisp_pre_load` is an absolute path
     pre_load = path.join(app.confdir, app.config.elisp_pre_load)
-    for (name, prefix) in app.config.elisp_packages.iteritems():
+    for (name, prefix) in app.config.elisp_packages.items():
         index_package(emacs, name, prefix, pre_load)
 
 
