@@ -55,6 +55,6 @@ You can get well-formatted keybind list using::
 
 
 Finally, you can use ``el:symbol`` role to refer symbols.
-For exmaple::
+For example::
 
    :el:symbol:`FUNCTION-NAME`
